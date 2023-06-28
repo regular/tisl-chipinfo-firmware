@@ -1,10 +1,22 @@
 #include <stdint.h>
 #include <stddef.h>
+#include <string.h>
 
 #include <ti/drivers/GPIO.h>
 #include <ti/drivers/UART.h>
 
 #include "Board.h"
+#include <ti/devices/DeviceFamily.h>
+#include DeviceFamily_constructPath(driverlib/chipinfo.h)
+
+/*
+#include DeviceFamily_constructPath(inc/hw_fcfg1.h)
+#include DeviceFamily_constructPath(inc/hw_ccfg.h)
+#include DeviceFamily_constructPath(inc/hw_ccfg_simple_struct.h)
+*/
+
+extern const char *chip_type_names[];
+extern int num_chip_types;
 
 void *mainThread(void *arg0)
 {
@@ -31,8 +43,17 @@ void *mainThread(void *arg0)
     while (1);
   }
 
-  const char  echoPrompt[] = "Echoing characters:\r\n";
+  const ChipType_t ct = ChipInfo_GetChipType();
+  const char* ct_name;
+  if (ct >= num_chip_types || ct < 0) {
+    ct_name = "n/a";
+  } else {
+    ct_name = chip_type_names[ct];
+  }
+
+  const char  echoPrompt[] = "Chip type is:\r\n";
   UART_write(uart, echoPrompt, sizeof(echoPrompt));
+  UART_write(uart, ct_name, strlen(ct_name));
 
   /* Loop forever echoing */
   char input;
