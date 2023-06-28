@@ -13,7 +13,7 @@
 
     <project
         title="UART Echo"
-        name="uartecho_CC2640R2_LAUNCHXL_tirtos_ccs"
+        name="chipinfo-fw_CC2640R2_LAUNCHXL_tirtos_ccs"
         toolChain="TI"
         connection="TIXDS110_Connection.xml"
         device="Cortex M.CC2640R2F"
@@ -61,12 +61,12 @@
 
         <property name="buildProfile" value="release"/>
         <property name="isHybrid" value="true"/>
-        <group id="uartecho.SIMPLELINK_CC2640R2_SDK.CC2640R2_LAUNCHXL.drivers.TI"/>
+        <group id="chipinfo-fw.SIMPLELINK_CC2640R2_SDK.CC2640R2_LAUNCHXL.drivers.TI"/>
         <file path="../../overview.rov.json" openOnCreation="false" excludeFromBuild="false" action="copy">
         </file>
         <file path="../../README.md" openOnCreation="false" excludeFromBuild="false" action="copy">
         </file>
-        <file path="../../uartecho.c" openOnCreation="false" excludeFromBuild="false" action="copy">
+        <file path="../../chipinfo-fw.c" openOnCreation="false" excludeFromBuild="false" action="copy">
         </file>
         <file path="../../README.html" openOnCreation="false" excludeFromBuild="false" action="copy">
         </file>

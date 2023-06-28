@@ -31,7 +31,7 @@
  */
 
 /*
- *  ======== uartecho.c ========
+ *  ======== chipinfo-fw.c ========
  */
 #include <stdint.h>
 #include <stddef.h>

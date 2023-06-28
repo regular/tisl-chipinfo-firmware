@@ -1929,6 +1929,6 @@
     </settings>
   </configuration>
 <file>
-    <name>$PROJ_DIR$/uartecho.ipcf</name>
+    <name>$PROJ_DIR$/chipinfo-fw.ipcf</name>
 </file>
 </project>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- IAR Project Connection File -->
 
-<iarProjectConnection version="1.8" name="uartecho" oneShot="true"
+<iarProjectConnection version="1.8" name="chipinfo-fw" oneShot="true"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema"
   xsi:noNamespaceSchemaLocation="IarProjectConnection_1.8.xsd">
 
@@ -39,7 +39,7 @@
 
   <linkerFile>
     <override>true</override>
-    <path>$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/uartecho/tirtos/iar/CC2640R2_LAUNCHXL_TIRTOS.icf</path>
+    <path>$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/chipinfo-fw/tirtos/iar/CC2640R2_LAUNCHXL_TIRTOS.icf</path>
   </linkerFile>
 
   <linkerExtraOptions>
@@ -80,22 +80,22 @@
 
   <files>
     <group name="Source files">
-      <path copyTo="$PROJ_DIR$/uartecho.c">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/uartecho/uartecho.c</path>
-      <path copyTo="$PROJ_DIR$/main_tirtos.c">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/uartecho/tirtos/main_tirtos.c</path>
-      <path copyTo="$PROJ_DIR$/CC2640R2_LAUNCHXL.c">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/uartecho/CC2640R2_LAUNCHXL.c</path>
-      <path copyTo="$PROJ_DIR$/CC2640R2_LAUNCHXL_fxns.c">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/uartecho/CC2640R2_LAUNCHXL_fxns.c</path>
-      <path copyTo="$PROJ_DIR$/ccfg.c">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/uartecho/ccfg.c</path>
-      <path copyTo="$PROJ_DIR$/CC2640R2_LAUNCHXL_TIRTOS.icf">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/uartecho/tirtos/iar/CC2640R2_LAUNCHXL_TIRTOS.icf</path>
+      <path copyTo="$PROJ_DIR$/chipinfo-fw.c">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/chipinfo-fw/chipinfo-fw.c</path>
+      <path copyTo="$PROJ_DIR$/main_tirtos.c">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/chipinfo-fw/tirtos/main_tirtos.c</path>
+      <path copyTo="$PROJ_DIR$/CC2640R2_LAUNCHXL.c">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/chipinfo-fw/CC2640R2_LAUNCHXL.c</path>
+      <path copyTo="$PROJ_DIR$/CC2640R2_LAUNCHXL_fxns.c">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/chipinfo-fw/CC2640R2_LAUNCHXL_fxns.c</path>
+      <path copyTo="$PROJ_DIR$/ccfg.c">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/chipinfo-fw/ccfg.c</path>
+      <path copyTo="$PROJ_DIR$/CC2640R2_LAUNCHXL_TIRTOS.icf">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/chipinfo-fw/tirtos/iar/CC2640R2_LAUNCHXL_TIRTOS.icf</path>
     </group>
 
     <group name="Header files">
-      <path copyTo="$PROJ_DIR$/Board.h">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/uartecho/Board.h</path>
-      <path copyTo="$PROJ_DIR$/CC2640R2_LAUNCHXL.h">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/uartecho/CC2640R2_LAUNCHXL.h</path>
+      <path copyTo="$PROJ_DIR$/Board.h">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/chipinfo-fw/Board.h</path>
+      <path copyTo="$PROJ_DIR$/CC2640R2_LAUNCHXL.h">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/chipinfo-fw/CC2640R2_LAUNCHXL.h</path>
     </group>
 
     <group name="Documentation" build="false">
-      <path copyTo="$PROJ_DIR$/README.md">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/uartecho/README.md</path>
-      <path copyTo="$PROJ_DIR$/README.html">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/uartecho/README.html</path>
+      <path copyTo="$PROJ_DIR$/README.md">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/chipinfo-fw/README.md</path>
+      <path copyTo="$PROJ_DIR$/README.html">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/examples/rtos/CC2640R2_LAUNCHXL/drivers/chipinfo-fw/README.html</path>
       <path reference="$PROJ_DIR$/Board.html">$SIMPLELINK_CC2640R2_SDK_INSTALL_DIR$/source/ti/boards/CC2640R2_LAUNCHXL/Board.html</path>
     </group>
   </files>

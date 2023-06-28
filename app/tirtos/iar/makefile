@@ -7,11 +7,11 @@ KERNEL_BUILD := $(SIMPLELINK_CC2640R2_SDK_INSTALL_DIR)/kernel/tirtos/builds/CC26
 CC = "$(IAR_ARMCOMPILER)/bin/iccarm"
 LNK = "$(IAR_ARMCOMPILER)/bin/ilinkarm"
 
-OBJECTS = uartecho.obj main_tirtos.obj CC2640R2_LAUNCHXL.obj CC2640R2_LAUNCHXL_fxns.obj ccfg.obj
+OBJECTS = chipinfo-fw.obj main_tirtos.obj CC2640R2_LAUNCHXL.obj CC2640R2_LAUNCHXL_fxns.obj ccfg.obj
 
 CONFIGPKG = $(KERNEL_BUILD)/iar
 
-NAME = uartecho
+NAME = chipinfo-fw
 
 CFLAGS = -I../.. \
     -DDeviceFamily_CC26X0R2 \
@@ -46,7 +46,7 @@ $(CONFIGPKG)/linker.cmd $(CONFIGPKG)/compiler.opt:
 	@ echo You can build it by issuing $(MAKE) in $(CONFIGPKG).
 	@ $(ECHOBLANKLINE)
 
-uartecho.obj: ../../uartecho.c $(CONFIGPKG)/compiler.opt
+chipinfo-fw.obj: ../../chipinfo-fw.c $(CONFIGPKG)/compiler.opt
 	@ echo Building $@
 	@ $(CC) $(CFLAGS) $< -f $(CONFIGPKG)/compiler.opt -o $@
 
